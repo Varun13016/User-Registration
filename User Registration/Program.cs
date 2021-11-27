@@ -28,7 +28,7 @@ namespace User_Registration
             string name4 = Console.ReadLine();
             Patterns.MobileNumber(name4);
 
-            Console.WriteLine("\n Write your Password ex : Aa9@ length atleast 8 .");
+            Console.WriteLine("\n Write your Password ex : X@xxxx123");
             Console.Write("\n Enter Password : ");
             string name5 = Console.ReadLine();
             Patterns.Password(name5);
