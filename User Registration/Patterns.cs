@@ -5,17 +5,17 @@ namespace User_Registration
 {
     public class Patterns
     {
-        public static void FirstName(string name)
+        public static void LastName(string name)
         {
-            string FirstName = "^[A-Z]\\w{1,10}$$";
-            Regex regex = new Regex(FirstName);
+            string LastName = "^[A-Za-z]\\w{1,10}$$";
+            Regex regex = new Regex(LastName);
             if (regex.IsMatch(name))
             {
                 Console.WriteLine(name + " is valid name");
             }
             else
             {
-                Console.WriteLine(name + " is invalid. Please Enter First name start with capital letter and maximum 10 charactors");
+                Console.WriteLine(name + " is invalid. Please Enter Last name start with capital letter and maximum 10 charactors");
             }
         }
     }
