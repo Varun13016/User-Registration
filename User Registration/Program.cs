@@ -7,10 +7,10 @@ namespace User_Registration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular Expression Program \n");
-            Console.WriteLine("Write your Email ex : example123@gmail.com your can write yahoo and any other mail ID.");
-            Console.Write("\n Enter Email : ");
+            Console.WriteLine("Write your Mobile Number ex : +91 1234567891 .");
+            Console.Write("\n Enter Mobile Number : ");
             string name = Console.ReadLine();
-            Patterns.Email(name);
+            Patterns.MobileNumber(name);
         }
     }
 }
