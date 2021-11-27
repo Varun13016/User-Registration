@@ -7,7 +7,7 @@ namespace User_Registration
     {
         public static void Password(string name)
         {
-            string Password = "^[A-Z][A-Za-z0-9]{7}";
+            string Password = "^((?=.*[A-Z])(?=.*[0-9])(?=.{8,}))";
             Regex regex = new Regex(Password);
             if (regex.IsMatch(name))
             {
