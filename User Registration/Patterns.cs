@@ -5,17 +5,17 @@ namespace User_Registration
 {
     public class Patterns
     {
-        public static void LastName(string name)
+        public static void Email(string name)
         {
-            string LastName = "^[A-Za-z]\\w{1,10}$$";
-            Regex regex = new Regex(LastName);
+            string Email = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)*[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+            Regex regex = new Regex(Email);
             if (regex.IsMatch(name))
             {
-                Console.WriteLine(name + " is valid name");
+                Console.WriteLine(name + " is valid MailID");
             }
             else
             {
-                Console.WriteLine(name + " is invalid. Please Enter Last name start with capital letter and maximum 10 charactors");
+                Console.WriteLine(name + " is invalid.");
             }
         }
     }
