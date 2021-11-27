@@ -5,17 +5,17 @@ namespace User_Registration
 {
     public class Patterns
     {
-        public static void MobileNumber(string name)
+        public static void Password(string name)
         {
-            string MobileNumber = "(0|91)?[ ][6-9][0-9]{9}";
-            Regex regex = new Regex(MobileNumber);
+            string Password = "^[A-Za-z0-9]{8}";
+            Regex regex = new Regex(Password);
             if (regex.IsMatch(name))
             {
-                Console.WriteLine(name + " is Valid Number");
+                Console.WriteLine(name + " is Valid Password");
             }
             else
             {
-                Console.WriteLine(name + " is invalid");
+                Console.WriteLine(name + " is invalid.");
             }
         }
     }

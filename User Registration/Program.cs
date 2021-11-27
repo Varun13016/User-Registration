@@ -7,10 +7,10 @@ namespace User_Registration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular Expression Program \n");
-            Console.WriteLine("Write your Mobile Number ex : +91 1234567891 .");
-            Console.Write("\n Enter Mobile Number : ");
+            Console.WriteLine("Write your Password ex : length atleast 8");
+            Console.Write("\n Enter Password : ");
             string name = Console.ReadLine();
-            Patterns.MobileNumber(name);
+            Patterns.Password(name);
         }
     }
 }
